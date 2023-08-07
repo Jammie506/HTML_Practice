@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <!-- Adding the icon that shows up on the site tap, should 32*32 image : Link:Favicon -->
+    <!-- Adding pathing on how to travel through folders -->
+    <link rel="shortcut icon" href="Images/Favicons/twitter.jpg" type="image/.jpg">
+    #TODO Find out why Favicons don't work on Safari 
+
+    <!-- text wrapping for pre tags at bottom -->
+    <style>
+        #gfg {
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 15px;
+        }
+ 
+        pre {
+            overflow-x: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <H1 id="top">
+        Welcome to HTML 201
+    </H1>
+
+    <a href="#bottom">
+        Scroll to bottom of the page
+    </a>
+
+    <p>
+        <b>Long Paragraph</b>
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, enim. Commodi nisi, explicabo facere cum, animi dignissimos quia, cupiditate qui numquam deleniti deserunt ad voluptates voluptate suscipit sequi nostrum consequuntur?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, enim. Commodi nisi, explicabo facere cum, animi dignissimos quia, cupiditate qui numquam deleniti deserunt ad voluptates voluptate suscipit sequi nostrum consequuntur?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, enim. Commodi nisi, explicabo facere cum, animi dignissimos quia, cupiditate qui numquam deleniti deserunt ad voluptates voluptate suscipit sequi nostrum consequuntur?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, enim. Commodi nisi, explicabo facere cum, animi dignissimos quia, cupiditate qui numquam deleniti deserunt ad voluptates voluptate suscipit sequi nostrum consequuntur?
+    </p>
+
+    <img src="Images/plantPhoto.jpg" alt="Pathos Plant" width="50%">
+
+    <!-- <table border="1" width="100%">
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 1.1</td>
+        </tr>
+        <tr>
+            <td>Cell 2</td>
+        </tr>
+    </table> -->
+
+    <!-- <table border="1" width="100%">
+        <tr>
+            <td>First Cell Data</td>
+            <td>Second Cell Data</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            
+        </tr>
+    </table> -->
+
+    <!-- Merging Cells -->
+    <!-- <table border="1" width="100%">
+        <tbody>
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td colspan="2">2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+
+    <!-- Using tables as a Layout Guide -->
+    <table border="1" width="100%">
+        <tr>
+            <th colspan="2">Welcome to my Website</th>
+        </tr>
+        <tr>
+            <td width="20%">
+                <h3>Navigation</h3>
+            </td>
+            <td>
+                <h3>Content</h3>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Changing inline CSS into a HTML class, written in CSS -->
+    <style>
+        .classNameHere {
+            padding: 40px; 
+            color: white; 
+            background-color: black
+        }
+       
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        /* Styles can also be added using IDs */
+        #testingID {
+            border: 15px solid red;
+        }
+    </style>
+
+    <!-- Inline CSS - Not the proper way but is very useful sometimes -->
+    <div class="classNameHere">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse distinctio minima, optio odit repellendus nisi rem laborum earum beatae omnis deleniti sit ratione quisquam quasi similique voluptate ab pariatur! Nisi.
+    </div>
+
+    <div id="testingID">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores mollitia enim nemo quaerat fugiat soluta, quibusdam illo, maiores commodi optio omnis laudantium perferendis cumque obcaecati sequi? Dolorem totam ducimus fugiat!
+    </div>
+
+    <div class="classNameHere uppercase">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa obcaecati id laboriosam aspernatur temporibus architecto neque reprehenderit sequi? Repellat odio sit dicta rerum et accusamus minima quis quia exercitationem tenetur!
+    </div>
+
+    <h3>
+        Code Formatting
+    </h3>
+
+    <!-- PRE Tags care about whitespace, it also uses monospacing -->
+    <pre>
+        Some stuff here &lt;b&gt; This is Bold &lt;/b&gt;
+        Second Line Here
+    </pre>
+
+    <pre id="gfg">
+            <code> Lorem ipsum dolor sit amet consectetur </code> adipisicing elit. Incidunt saepe quos dolore dolorum, inventore laboriosam, eius odio veritatis unde, ut eos adipisci reiciendis porro debitis animi sed id. Beatae, architecto!
+    </pre>
+
+    <h3>Forms</h3>
+
+    <form action="" method="GET">
+        <!-- NB : Don't put passwords in the URL! -->
+        <!-- Use div to put stuff on their own lines -->
+        <div>
+            <input required name="email" type="email" value="Hello World" placeholder="Enter Password">
+        </div>
+
+        <div>
+            <textarea required name=Address" cols="50" rows="5" placeholder="Enter Text Here">
+                Whitespace Matters Here
+    Do this to avoid it
+            </textarea>
+        </div>
+
+        <div>
+            <select name="selectedOption" >
+                <option value="" disabled="disabled">-Disabled-</option>
+                <option value="value1">This is option 1</option>
+                <option value="value2">This is option 2</option>
+                <option value="defaultIsSeleceted" selected="selected">Selected by Default</option>
+
+            </select>
+        </div>
+
+        <div>
+            <button type="submit">Click Me</button>
+            <button type="reset">reset</button>
+        </div>
+
+        <!-- This is how t refil form -->
+        <!-- <button type="reset">reset</button> -->
+    </form>
+
+    <h3>Embedding</h3>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HajiEqEtIRY" frameborder="0" allowfullscreen></iframe>
+
+    <div id="bottom">
+        <a href="#top">
+            Return to Top of Page
+        </a>
+        <sup> &copy; </sup>  2023
+        <sub> &copy; </sub>  2023
+    </div>
+
+</body>
+
+</html>
